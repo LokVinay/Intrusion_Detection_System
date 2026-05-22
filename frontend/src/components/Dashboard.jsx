@@ -30,11 +30,17 @@ function Dashboard() {
 
   useEffect(() => {
     axios.get("https://intrusion-detection-system-s1jc.onrender.com/api/feature-importance")
-      .then(res => setFeatureData(res.data))
+  .then(res => {
+    console.log("Feature Data:", res.data);
+    setFeatureData(res.data);
+  })
       .catch(err => console.error("❌ Feature importance error:", err));
 
     axios.get("https://intrusion-detection-system-s1jc.onrender.com/api/confusion-matrix")
-      .then(res => setConfusionData(res.data))
+  .then(res => {
+    console.log("Confusion Data:", res.data);
+    setConfusionData(res.data);
+  })
       .catch(err => console.error("❌ Confusion matrix error:", err));
   }, []);
 
@@ -163,7 +169,7 @@ function Dashboard() {
 
         <h3>Feature Importance</h3>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          {featureData.length > 0 ? (
+          {Array.isArray(featureData) && featureData.length > 0 ? (
             <BarChart width={700} height={300} data={featureData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="feature" />
@@ -177,7 +183,7 @@ function Dashboard() {
 
         <h3>Confusion Matrix</h3>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          {confusionData.length > 0 ? (
+        {Array.isArray(confusionData) && confusionData.length > 0 ? (
             <table className="confusion-table">
               <thead>
                 <tr>
