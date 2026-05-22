@@ -1,0 +1,229 @@
+/* ==============================
+   Dashboard Layout
+============================== */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #f9fafc;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* Header */
+.dashboard h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #003366;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dashboard p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ==============================
+   Main Content Box
+============================== */
+.dashboard-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-box:hover {
+  transform: translateY(-3px);
+}
+
+/* ==============================
+   Toggle Buttons
+============================== */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.toggle {
+  padding: 10px 25px;
+  border: 2px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.toggle.active,
+.toggle:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ==============================
+   File Upload
+============================== */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-upload input[type="file"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.file-upload button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload button:hover {
+  background-color: #0056b3;
+}
+
+/* ==============================
+   Manual Input Form
+============================== */
+.manual-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.manual-form input,
+.manual-form select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.manual-form input:focus,
+.manual-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Analyze Button */
+.manual-form button {
+  grid-column: span 3;
+  width: 45%;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.manual-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ==============================
+   Visualization Section
+============================== */
+.visualizations {
+  margin-top: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.visualizations h3 {
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Feature Importance Graph */
+.chart-container {
+  margin: 0 auto 30px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+/* Confusion Matrix */
+.confusion-table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 60%;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confusion-table th,
+.confusion-table td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.confusion-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.confusion-table td {
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+/* ==============================
+   Responsive Layout
+============================== */
+@media (max-width: 768px) {
+  .manual-form {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-box {
+    width: 95%;
+  }
+
+  .confusion-table {
+    width: 90%;
+  }
+
+  .chart-container {
+    width: 95%;
+  }
+}
