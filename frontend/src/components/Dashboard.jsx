@@ -72,7 +72,8 @@ function Dashboard() {
     summary[demoPrediction] = 1;
     setPredictionData(summary);
 
-    axios.post("https://intrusion-detection-system-s1jc.onrender.com/api/predict-batch",
+    axios.post(
+  "https://intrusion-detection-system-s1jc.onrender.com/api/predict-batch",
       { features_list: [featureValues] },
       { headers: { "Content-Type": "application/json" } }
     ).then(res => console.log("✅ Server Response:", res.data))
