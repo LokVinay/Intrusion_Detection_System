@@ -9,7 +9,6 @@ __pycache__/
 node_modules/
 
 # ML model files
-*.joblib
 *.h5
 
 # Datasets
