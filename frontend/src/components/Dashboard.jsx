@@ -29,11 +29,11 @@ function Dashboard() {
   
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/feature-importance")
+    axios.get("https://intrusion-detection-system-s1jc.onrender.com/api/feature-importance")
       .then(res => setFeatureData(res.data))
       .catch(err => console.error("❌ Feature importance error:", err));
 
-    axios.get("http://127.0.0.1:8000/api/confusion-matrix")
+    axios.get("https://intrusion-detection-system-s1jc.onrender.com/api/confusion-matrix")
       .then(res => setConfusionData(res.data))
       .catch(err => console.error("❌ Confusion matrix error:", err));
   }, []);
@@ -72,7 +72,7 @@ function Dashboard() {
     summary[demoPrediction] = 1;
     setPredictionData(summary);
 
-    axios.post("http://127.0.0.1:8000/api/predict-batch",
+    axios.post("https://intrusion-detection-system-s1jc.onrender.com/api/predict-batch",
       { features_list: [featureValues] },
       { headers: { "Content-Type": "application/json" } }
     ).then(res => console.log("✅ Server Response:", res.data))
