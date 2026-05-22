@@ -30,8 +30,8 @@ app.add_middleware(
 # ----------------------
 # Paths to model and encoder
 # ----------------------
-MODEL_PATH = "/Users/pratheek/Desktop/Major Project/backend/xgboost_model_10features.pkl"
-ENCODER_PATH = "/Users/pratheek/Desktop/Major Project/backend/label_encoder_10features.pkl"
+MODEL_PATH = "xgboost_model_10features.pkl"
+ENCODER_PATH = "label_encoder_10features.pkl"
 
 # ----------------------
 # Load XGBoost model and LabelEncoder
