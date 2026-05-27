@@ -25,3 +25,14 @@ Interactive dashboard for monitoring cyber threats
 ## Backend API (Render)
 
 - https://intrusion-detection-system-s1jc.onrender.com/ [LINK]
+
+
+# 🧠 Features
+- Detects cyber attacks using Machine Learning
+- FastAPI backend for prediction APIs
+- React frontend dashboard
+- Feature Importance graph
+- Confusion Matrix visualization
+- Interactive charts using Recharts
+- Batch prediction support
+- Deployed online using Vercel and Render
