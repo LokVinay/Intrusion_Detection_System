@@ -14,3 +14,14 @@ Real-time prediction
 Feature importance visualization
 Confusion matrix analysis
 Interactive dashboard for monitoring cyber threats
+
+
+
+# 🚀 Live Project Links
+## Frontend (Vercel)
+
+https://intrusion-detection-system-zeta.vercel.app/ [LINK]
+
+## Backend API (Render)
+
+https://intrusion-detection-system-s1jc.onrender.com/ [LINK]
