@@ -86,7 +86,7 @@ Interactive dashboard for monitoring cyber threats
 
 ### Frontend runs on:
 
-- http://localhost:3000 [COMMAND]
+- http://localhost:3000
 
 
 # ▶️ Run Backend
@@ -190,6 +190,11 @@ The project uses:
 
 ## GitHub Profiles
 
+- https://github.com/LokVinay [LINK]
+
+
+- https://github.com/ReddammagariPratheekReddy [LINK]
+  
 # 🔮 Future Enhancements
 
 - Real-time packet capture
@@ -209,7 +214,7 @@ Through this project we learned:
 - Deployment using Vercel and Render
 - Cybersecurity basics
 
-#📄 License
+# 📄 License
 
 - This project is developed for educational and academic purposes.
 
