@@ -1,2 +1,16 @@
-# Intelligent-Intrusion-Detection-System-Detecting-Cyber-Threats-with-Machine-Learning
-Machine Learning–based Intrusion Detection System (IDS) using the NSL-KDD dataset and XGBoost for detecting normal and malicious network traffic. Built with a FastAPI backend and React frontend to provide real-time predictions and graphical visualizations through an interactive web interface.
+# Intelligent Intrusion Detection System using Machine Learning
+📌 Project Overview
+
+The Intelligent Intrusion Detection System (IDS) is a Machine Learning based web application developed to detect and classify suspicious network traffic activities.
+
+This system helps identify whether incoming network traffic is:
+
+Normal
+Intrusion / Attack
+
+The project provides:
+
+Real-time prediction
+Feature importance visualization
+Confusion matrix analysis
+Interactive dashboard for monitoring cyber threats
